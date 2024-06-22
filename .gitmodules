@@ -1,0 +1,3 @@
+[submodule "tech_blog"]
+	path = tech_blog
+	url = https://gitlab.com/vaishnavi5561125/tech_blog
