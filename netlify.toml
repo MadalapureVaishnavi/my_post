@@ -1,0 +1,3 @@
+[build]
+command = "python build.py"  # Replace with your build command
+publish = "path/to/generated/static/files"  # Replace with your publish directory
