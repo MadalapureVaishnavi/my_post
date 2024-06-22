@@ -13,12 +13,6 @@
             transform: translateY(-10px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
-        .card-img-top {
-            transition: transform 0.3s ease;
-        }
-        .card-img-top:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
@@ -28,7 +22,6 @@
             {% for post in posts %}
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm">
-                    <!-- <img src="{{ post.image_url }}" class="card-img-top" alt="{{ post.title }}"> -->
                     <div class="card-body">
                         <h5 class="card-title"><a href="{{ url_for('post', post_id=post.id) }}" class="text-dark">{{ post.title }}</a></h5>
                         <p class="card-text text-muted">{{ post.content[:150] }}...</p>
